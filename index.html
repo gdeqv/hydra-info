@@ -5,51 +5,145 @@
   <title>Hydra — анонимный поисковик</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2em;
-      line-height: 1.5;
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #0d1117;
+      color: #e6edf3;
     }
-    .container {
-      max-width: 600px;
-    }
-    h1 {
-      color: #2c3e50;
-    }
+
     a {
-      color: #3498db;
+      color: #58a6ff;
       text-decoration: none;
+      transition: 0.3s;
     }
     a:hover {
+      color: #1f6feb;
       text-decoration: underline;
     }
-    .info-box {
-      background: #f4f4f4;
-      padding: 1em;
-      border-radius: 5px;
-      margin-top: 1em;
+
+    h1, h2, h3 {
+      color: #f0f6fc;
+      margin-top: 0.5em;
+    }
+
+    p {
+      margin: 0.5em 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2em;
+    }
+
+    header {
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+      padding: 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      color: #8b949e;
+      font-size: 1.1rem;
+    }
+
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 1.5em;
+      margin-bottom: 2em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .card h2 {
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      margin: 0.5em 0 0.5em 1.5em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
+      font-size: 0.9em;
+      background: #161b22;
+    }
+
+    .fade-in {
+      animation: fadeIn 1.2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
+  <!-- Шапка -->
+  <header>
+    <h1>Hydra — Анонимный поисковик</h1>
+    <p>Поиск без слежки. Без хранения данных. Без компромиссов.</p>
+  </header>
+
   <div class="container">
-    <h1>Hydra — анонимный поисковик</h1>
-    <div class="info-box">
+    <!-- Краткая инфо -->
+    <div class="card fade-in">
+      <h2>Что такое Hydra?</h2>
       <p>
         Hydra — приватный поисковик, обещающий полную анонимность.  
-        Без отслеживания пользователей, без хранения данных, с поддержкой поиска по сайтам, изображениям и с AI-поиском.  
-        0
+        Без отслеживания пользователей, без хранения данных, с поддержкой поиска по сайтам, изображениям и AI-поиском.  
       </p>
       <p>
-        Вы можете узнать о проекте подробнее на официальном сайте:
-        <a href="https://myhydra.ru" target="_blank" rel="noopener noreferrer">
-          myhydra.ru
-        </a>
-      </p>
-      <p>
-        На сайте также публикуется политика конфиденциальности и условия использования.  
-        1
+        Подробнее на официальном сайте:  
+        <a href="https://myhydra.ru" target="_blank" rel="noopener noreferrer">myhydra.ru</a>
       </p>
     </div>
+
+    <!-- Условия использования -->
+    <div class="card fade-in">
+      <h2>Условия использования</h2>
+      <p><em>Последнее обновление: 14 октября 2025</em></p>
+
+      <h3>Согласие с условиями</h3>
+      <p>Используя Hydra, вы соглашаетесь соблюдать эти условия. Если не согласны — не используйте сервис.</p>
+
+      <h3>Использование сервиса</h3>
+      <p>Hydra предназначена только для законных целей. Запрещено:</p>
+      <ul>
+        <li>Использовать для незаконной деятельности</li>
+        <li>Распространять вредоносное ПО или код</li>
+        <li>Получать несанкционированный доступ</li>
+        <li>Нарушать законы своей юрисдикции</li>
+      </ul>
+
+      <h3>Доступность</h3>
+      <p>Мы стараемся предоставлять стабильный сервис, но не гарантируем постоянную доступность.</p>
+
+      <h3>Результаты поиска</h3>
+      <p>Hydra агрегирует результаты, и мы не отвечаем за их точность или уместность.</p>
+
+      <h3>Отказ от гарантий</h3>
+      <p>Сервис предоставляется «как есть» без гарантий бесперебойной работы.</p>
+    </div>
   </div>
+
+  <!-- Подвал -->
+  <footer>
+    © 2025 Hydra | <a href="https://myhydra.ru" target="_blank">myhydra.ru</a>
+  </footer>
 </body>
 </html>
